@@ -1,0 +1,35 @@
+epoch: 100
+
+dataset:
+  name: calfornia_housing
+  config:
+    source_domain: true
+    standardize: true
+  train_ratio: 0.9
+
+regressor:
+  type: table
+  config:
+    in_dims: 8
+    h_dims: 100
+    n_rep: 4
+
+optimizer:
+  param: all
+  name: Adam
+  config:
+    lr: 1.0e-3
+    weight_decay: 5.0e-4
+
+trainer:
+  compile_model: &compile_model null
+
+evaluator:
+  compile_model: *compile_model
+
+train_dataloader:
+  batch_size: 64
+  shuffle: true
+
+val_dataloader:
+  batch_size: 256

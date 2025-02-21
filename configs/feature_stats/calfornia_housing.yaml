@@ -1,0 +1,20 @@
+dataset:
+  name: calfornia_housing
+  config:
+    source_domain: true
+    standardize: true
+  train_ratio: 0.9
+
+regressor:
+  source: result/source/calfornia_housing/source_model_25600.pt
+  type: table
+  config:
+    in_dims: 8
+    h_dims: 100
+    n_rep: 4
+
+calculator:
+  compile_model: null
+
+dataloader:
+  batch_size: 256

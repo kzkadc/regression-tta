@@ -1,0 +1,43 @@
+dataset:
+  name: calfornia_housing
+  config:
+    source_domain: false
+    standardize: true
+
+regressor:
+  source: result/source/calfornia_housing/source_model_25600.pt
+  type: table
+  config:
+    in_dims: 8
+    h_dims: 100
+    n_rep: 4
+
+optimizer:
+  param: fe
+  name: Adam
+  config:
+    lr: 1.0e-4
+    weight_decay: 0.0
+
+tta:
+  type: pca
+  config:
+    train_mode: false
+    weight_bias: 1.0
+    weight_exp: 1.0
+    pc_config:
+      stat_file: result/source/calfornia_housing/feature_stats.pt
+      contrib_top_k: 5
+    loss_config:
+      eps: 1.0e-8
+    compile_model: &compile_model null
+
+evaluator:
+  compile_model: *compile_model
+
+adapt_dataloader:
+  batch_size: 64
+  shuffle: true
+
+val_dataloader:
+  batch_size: 256

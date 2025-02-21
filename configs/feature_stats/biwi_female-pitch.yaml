@@ -1,0 +1,19 @@
+dataset:
+    name: biwi_kinect
+    config:
+        gender: female
+        target: pitch
+    val_indices: configs/biwi-kinect_female_val_indices.npy
+
+regressor:
+    type: image
+    config:
+        backbone: resnet50
+        pretrained: true
+        in_channels: 3
+
+calculator:
+    compile_model: null
+
+dataloader:
+    batch_size: 256

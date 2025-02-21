@@ -1,0 +1,5 @@
+SVHN_PATH = "/path/to/svhn"
+MNIST_PATH = "/path/to/mnist"
+UTKFACE_PATH = "/path/to/utkface"
+BIWI_PATH = "/path/to/BiwiKinect"
+CALIFORNIA_HOUSING_PATH = "/path/to/california_housing"

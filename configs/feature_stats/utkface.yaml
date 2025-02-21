@@ -1,0 +1,19 @@
+dataset:
+    name: utkface
+    config:
+        filter_gender: null
+    val_indices: configs/utkface-all_val_indices.json
+
+regressor:
+    source: result/source/utkface/source_model_29700.pt
+    type: image
+    config:
+        backbone: resnet50
+        pretrained: false
+        in_channels: 3
+
+calculator:
+    compile_model: null
+
+dataloader:
+    batch_size: 256

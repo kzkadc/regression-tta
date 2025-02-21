@@ -1,0 +1,31 @@
+epoch: 100
+
+dataset:
+    name: svhn
+
+regressor:
+    type: image
+    config:
+        backbone: resnet26
+        pretrained: false
+        in_channels: 3
+
+optimizer:
+    param: all
+    name: Adam
+    config:
+        lr: 1.0e-4
+        weight_decay: 5.0e-4
+
+trainer:
+    compile_model: &compile_model null
+
+evaluator:
+    compile_model: *compile_model
+
+train_dataloader:
+    batch_size: 64
+    shuffle: true
+
+val_dataloader:
+    batch_size: 256
