@@ -24,5 +24,3 @@ preferred-citation:
     title: Test-time Adaptation for Regression by Subspace Alignment
     year: 2025
     collection-title: Proceedings of the Thirteenth International Conference on Learning Representations
-    conference:
-        name: International Conference on Learning Representations (ICLR)
