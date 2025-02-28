@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+title: Test-time Adaptation for Regression by Subspace Alignment
+message: "If our work assists your research, please cite our paper."
+authors:
+    - family-names: Kazuki
+      given-names: Adachi
+    - family-names: Shin'ya
+      given-names: Yamaguchi
+    - family-names: Atsutoshi
+      given-names: Kumagai
+    - family-names: Tomoki
+      given-names: Hamagami
+preferred-citation:
+    type: conference-paper
+    authors:
+        - family-names: Kazuki
+          given-names: Adachi
+        - family-names: Shin'ya
+          given-names: Yamaguchi
+        - family-names: Atsutoshi
+          given-names: Kumagai
+        - family-names: Tomoki
+          given-names: Hamagami
+    title: Test-time Adaptation for Regression by Subspace Alignment
+    year: 2025
+    collection-title: Proceedings of the Thirteenth International Conference on Learning Representations
+    conference:
+        name: International Conference on Learning Representations (ICLR)
