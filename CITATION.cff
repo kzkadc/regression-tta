@@ -17,3 +17,10 @@ preferred-citation:
     year: 2025
     collection-type: proceedings
     collection-title: Proceedings of the Thirteenth International Conference on Learning Representations (ICLR)
+    identifiers:
+      - description: OpenReview
+        type: url
+        value: https://openreview.net/forum?id=SXtl7NRyE5
+      - description: arXiv
+        type: url
+        value: https://arxiv.org/abs/2410.03263
