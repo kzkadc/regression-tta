@@ -20,7 +20,8 @@ preferred-citation:
     identifiers:
       - description: OpenReview
         type: url
-        value: https://openreview.net/forum?id=SXtl7NRyE5
+        value: &openreview https://openreview.net/forum?id=SXtl7NRyE5
       - description: arXiv
         type: url
         value: https://arxiv.org/abs/2410.03263
+    url: *openreview
