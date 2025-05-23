@@ -9,7 +9,7 @@ RUN /bin/echo -e "Acquire::http::Timeout \"300\";\n\
 Acquire::ftp::Timeout \"300\";" >> /etc/apt/apt.conf.d/99timeout
 
 # update and install necessary tools
-RUN apt update && apt dist-upgrade -y
+RUN apt update && apt upgrade -y
 RUN apt install -y build-essential libbz2-dev libdb-dev \
   libreadline-dev libffi-dev libgdbm-dev liblzma-dev \
   libncursesw5-dev libsqlite3-dev libssl-dev \
