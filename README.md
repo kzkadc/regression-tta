@@ -19,7 +19,7 @@ $ docker build -t tta_regression docker --no-cache
 
 ## 1. Training the source model
 ```bash
-$ python3 train_source.py -c configs/train_source/yaml.json -o result/source/svhn
+$ python3 train_source.py -c configs/train_source/svhn.yaml -o result/source/svhn
 
 # running with the docker image
 $ docker run -it --rm -v $(pwd):$(pwd) -w $(pwd) --gpus device=0 tta_regression python3 train_source.py -c configs/train_source/svhn.yaml -o result/source/svhn
