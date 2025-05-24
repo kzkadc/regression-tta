@@ -29,6 +29,9 @@ $ docker run -it --rm -v $(pwd):$(pwd) -w $(pwd) --gpus device=0 tta_regression 
 ## 2. Computing the feature statistics
 ```bash
 $ python3 feature_stats.py -c configs/feature_stats/svhn.yaml -o result/source/svhn
+
+# running with the docker image
+$ docker run -it --rm -v $(pwd):$(pwd) -w $(pwd) --gpus device=0 tta_regression python3 feature_stats.py -c configs/feature_stats/svhn.yaml -o result/source/svhn
 ```
 
 The pre-trained model and feature statistics for SVHN are available in `result/`.
@@ -37,6 +40,9 @@ The pre-trained model and feature statistics for SVHN are available in `result/`
 ## 3. TTA
 ```bash
 $ python3 adaptation.py -c configs/tta/svhn.yaml -o result/tta/svhn
+
+# running with the docker image
+$ docker run -it --rm -v $(pwd):$(pwd) -w $(pwd) --gpus device=0 tta_regression python3 adaptation.py -c configs/tta/svhn.yaml -o result/tta/svhn
 ```
 
 
