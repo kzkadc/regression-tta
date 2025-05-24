@@ -9,7 +9,7 @@ This paper investigates <em>test-time adaptation (TTA) for regression</em>, wher
 ![overview](overview.png)
 
 ## 0. Environment
-- Prepare the datasets (SVHN, MNIST, UTKFace, Biwi Kinect, California Housing) and write their path in `dataset/dataset_config.py`.
+- Prepare the datasets (SVHN, MNIST, UTKFace, Biwi Kinect, California Housing) and write their paths in `dataset/dataset_config.py`.
 - Install dependencies or build the docker image according to `docker/Dockerfile`.
 
 ```bash
