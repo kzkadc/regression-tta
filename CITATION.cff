@@ -2,14 +2,14 @@ cff-version: 1.2.0
 title: Test-time Adaptation for Regression by Subspace Alignment
 message: "If our work assists your research, please cite our paper."
 authors: &authors
-    - family-names: Kazuki
-      given-names: Adachi
-    - family-names: Shin'ya
-      given-names: Yamaguchi
-    - family-names: Atsutoshi
-      given-names: Kumagai
-    - family-names: Tomoki
-      given-names: Hamagami
+    - family-names: Adachi
+      given-names: Kazuki
+    - family-names: Yamaguchi
+      given-names: Shin'ya
+    - family-names: Kumagai
+      given-names: Atsutoshi
+    - family-names: Hamagami
+      given-names: Tomoki
 preferred-citation:
     type: conference-paper
     authors: *authors
